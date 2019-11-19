@@ -1,14 +1,14 @@
 package org.jlleitschuh.bad.random;
 
 import java.nio.charset.Charset;
-import java.util.Random;
+import java.security.SecureRandom;
 
-public class BadRandom {
-    private static final Random RANDOM = new Random();
+public class GoodRandom {
+    private static final SecureRandom SECURE_RANDOM = new SecureRandom();
 
     static String generate() {
         byte[] array = new byte[30];
-        RANDOM.nextBytes(array);
+        SECURE_RANDOM.nextBytes(array);
         return new String(array, Charset.defaultCharset());
     }
 

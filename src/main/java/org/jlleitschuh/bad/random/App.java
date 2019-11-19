@@ -8,10 +8,23 @@ import java.util.UUID;
 public class App {
 
     public static void main(String[] args) {
+        badLogic();
+        goodLogic();
+    }
+
+    private static void badLogic() {
         String token1 = BadApache3RandomStringUtils.generate();
         String token2 = BadApacheRandomStringUtils.generate();
         String token3 = BadRandom.generate();
         UUID token4 = BadThreadLocalRandom.generate();
+        sensitiveSink(token1, token2, token3, token4);
+    }
+
+    private static void goodLogic() {
+        String token1 = GoodApache3RandomStringUtils.generate();
+        String token2 = GoodApacheRandomStringUtils.generate();
+        String token3 = GoodRandom.generate();
+        UUID token4 = GoodUUID.generate();
         sensitiveSink(token1, token2, token3, token4);
     }
 
