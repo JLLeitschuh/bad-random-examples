@@ -25,6 +25,7 @@ dependencies {
     implementation("com.google.guava:guava:27.0.1-jre")
     implementation("commons-lang:commons-lang:2.6")
     implementation("org.apache.commons:commons-lang3:3.9")
+    implementation("org.apache.commons:commons-text:1.8")
 
     // Use JUnit test framework
     testImplementation("junit:junit:4.12")
