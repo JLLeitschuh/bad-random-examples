@@ -3,10 +3,10 @@ package org.jlleitschuh.bad.random;
 import org.apache.commons.text.CharacterPredicates;
 import org.apache.commons.text.RandomStringGenerator;
 
-import java.security.SecureRandom;
+import java.util.Random;
 
-public class GoodApacheRandomStringGenerator {
-    private static SecureRandom RANDOM = new SecureRandom();
+public class BadApacheRandomStringGenerator2 {
+    private static Random RANDOM = new Random();
     private static RandomStringGenerator STRING_GENERATOR =
         new RandomStringGenerator.Builder()
             .withinRange('0', 'z')

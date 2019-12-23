@@ -18,12 +18,13 @@ public class App {
     private static void badLogic() {
         String token1 = BadApache3RandomStringUtils.generate();
         String token2 = BadApacheRandomStringUtils.generate();
-        String token3 = BadApacheRandomStringGenerator.generate();
-        String token4 = BadRandom.generate();
-        String token5 = BadRandom2.generate();
-        String token6 = BadRandom3.generate();
-        UUID token7 = BadThreadLocalRandom.generate();
-        sensitiveSink(token1, token2, token3, token4, token5, token6, token7);
+        String token3 = BadApacheRandomStringGenerator.doGenerate();
+        String token4 = BadApacheRandomStringGenerator2.doGenerate();
+        String token5 = BadRandom.generate();
+        String token6 = BadRandom2.generate();
+        String token7 = BadRandom3.generate();
+        UUID token8 = BadThreadLocalRandom.generate();
+        sensitiveSink(token1, token2, token3, token4, token5, token6, token7, token8);
     }
 
     private static void badLogicSinkJHipster() {
@@ -37,8 +38,8 @@ public class App {
     private static void goodLogic() {
         String token1 = GoodApache3RandomStringUtils.generate();
         String token2 = GoodApacheRandomStringUtils.generate();
-        String token3 = GoodApacheRandomStringGenerator.generate();
-        String token4 = GoodApacheRandomStringGenerator2.generate();
+        String token3 = GoodApacheRandomStringGenerator.doGenerate();
+        String token4 = GoodApacheRandomStringGenerator2.doGenerate();
         String token5 = GoodRandom.generate();
         UUID token6 = GoodUUID.generate();
         sensitiveSink(token1, token2, token3, token4, token5, token6);

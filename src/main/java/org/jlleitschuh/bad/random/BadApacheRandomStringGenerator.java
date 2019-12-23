@@ -10,11 +10,11 @@ public class BadApacheRandomStringGenerator {
             .filteredBy(CharacterPredicates.LETTERS, CharacterPredicates.DIGITS)
             .build();
 
-    static String generate() {
+    static String doGenerate() {
         return STRING_GENERATOR.generate(30);
     }
 
     static String generatePassword() {
-        return generate();
+        return doGenerate();
     }
 }
