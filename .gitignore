@@ -1,3 +1,5 @@
+# Exclude the database generated
+bad-random-examples-db/
 
 # Created by https://www.gitignore.io/api/linux,macos,gradle,windows,eclipse,intellij
 # Edit at https://www.gitignore.io/?templates=linux,macos,gradle,windows,eclipse,intellij

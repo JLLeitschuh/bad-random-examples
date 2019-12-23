@@ -16,8 +16,9 @@ public class App {
         String token1 = BadApache3RandomStringUtils.generate();
         String token2 = BadApacheRandomStringUtils.generate();
         String token3 = BadRandom.generate();
-        UUID token4 = BadThreadLocalRandom.generate();
-        sensitiveSink(token1, token2, token3, token4);
+        String token4 = BadRandom2.generate();
+        UUID token5 = BadThreadLocalRandom.generate();
+        sensitiveSink(token1, token2, token3, token4, token5);
     }
 
     private static void goodLogic() {
