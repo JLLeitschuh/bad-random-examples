@@ -38,12 +38,13 @@ public class App {
     private static void goodLogic() {
         String token1 = GoodApache3RandomStringUtils.generate();
         String token2 = GoodApacheRandomStringUtils.generate();
-        String token3 = GoodApacheRandomStringGenerator.doGenerate();
-        String token4 = GoodApacheRandomStringGenerator2.doGenerate();
-        String token5 = GoodRandom.generate();
-        String token6 = GoodRandom2.getInstance().generate();
-        UUID token7 = GoodUUID.generate();
-        sensitiveSink(token1, token2, token3, token4, token5, token6, token7);
+        String token3 = GoodApacheRandomStringUtils2.generate();
+        String token4 = GoodApacheRandomStringGenerator.doGenerate();
+        String token5 = GoodApacheRandomStringGenerator2.doGenerate();
+        String token6 = GoodRandom.generate();
+        String token7 = GoodRandom2.getInstance().generate();
+        UUID token8 = GoodUUID.generate();
+        sensitiveSink(token1, token2, token3, token4, token5, token6, token7, token8);
     }
 
     private static void sensitiveSink(Object... secrets) {
