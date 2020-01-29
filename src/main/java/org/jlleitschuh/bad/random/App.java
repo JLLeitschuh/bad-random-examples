@@ -43,8 +43,9 @@ public class App {
         String token5 = GoodApacheRandomStringGenerator2.doGenerate();
         String token6 = GoodRandom.generate();
         String token7 = GoodRandom2.getInstance().generate();
-        UUID token8 = GoodUUID.generate();
-        sensitiveSink(token1, token2, token3, token4, token5, token6, token7, token8);
+        String token8 = GoodRandom3.getInstance().generate();
+        UUID token9 = GoodUUID.generate();
+        sensitiveSink(token1, token2, token3, token4, token5, token6, token7, token8, token9);
     }
 
     private static void sensitiveSink(Object... secrets) {
